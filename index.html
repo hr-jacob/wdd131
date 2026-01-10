@@ -1,78 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Jacob Herrera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Jacob Herrera</title>
 
-  <meta name="author" content="Jacob Herrera">
-  <meta name="description"
+    <meta name="author" content="Jacob Herrera">
+    <meta
+        name="description"
         content="This page is dedicated to class activities, hands-on exercises,
-        and practical examples focused on the fundamentals of dynamic web development.">
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/base.css">
+        and practical examples focused on the fundamentals of dynamic web development."
+    >
+    <meta name="author" content="Jacob Herrera" /> 
+        <meta 
+        content="This page is dedicated to class activities, hands-on exercises, 
+        and practical examples focused on the fundamentals of dynamic web developments." />
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
 
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
-    <nav>
-      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a>
-    </nav>
-  </header>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Jacob Herrera</h1>
+    <main>
+        <h1>Jacob Herrera</h1>
+            <section class="card">
+      <h2>About me</h2>
+      <img src="images/web-development.jpg" alt="Web development illustration">
+      <p>
+        Web development focuses on creating and maintaining websites.
+        It includes HTML for structure, CSS for design, and JavaScript
+        for interactivity.
+      </p>
+    </section>
 
-    <!-- CARD GRID -->
-    <div class="cards">
-      <section class="card">
-        <h2>Web Development</h2>
-        <img src="images/web-development.jpg" alt="Web development illustration">
-        <p>
-          Web development focuses on creating and maintaining websites.
-          It includes HTML for structure, CSS for design, and JavaScript
-          for interactivity.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Dynamic Web Fundamentals</h2>
-        <img src="images/dynamic-web.jpg" alt="Dynamic web concepts illustration">
-        <p>
-          Dynamic web fundamentals involve creating interactive and
-          data-driven web pages that respond to user actions and
-          real-time information.
-        </p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <img src="images/dynamic-web.jpg" alt="Dynamic web concepts illustration">
+      <p>
+        Dynamic web fundamentals involve creating interactive and
+        data-driven web pages that respond to user actions and
+        real-time information.
+      </p>
+    </section>
+    </main>
+    <footer>
     <p>
-      &copy; <span id="currentyear"></span> Jacob Herrera | Mexico
+        &copy; <span id="currentyear"></span> Jacob Herrera | Mexico
     </p>
     <p id="lastModified"></p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent =
-      "Last Modification: " + document.lastModified;
-  </script>
-
+    </footer>
 </body>
 </html>
