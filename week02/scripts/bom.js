@@ -1,22 +1,40 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('____');
+const list = document.querySelector('ul');
 
-// Create a li element
-const li = document.createElement('li');
+button.addEventListener('click', function () {
 
-// Create a delete button
-const deleteButton = document.createElement('button');
+  if (input.value.trim() !== '') {
 
-// Populate the li with the input value
-li.textContent = input.value;
+    // Create a li element
+    const li = document.createElement('li');
 
-// Populate the button with ❌
-deleteButton.textContent = '❌';
+    // Create a delete button
+    const deleteButton = document.createElement('button');
 
-// Append the delete button to the li
-li.append(deleteButton);
+    // Populate the li with the input value
+    li.textContent = input.value;
 
-// Append the li to the unordered list
-list.append(li);
+    // Populate the button with ❌
+    deleteButton.textContent = '❌';
+
+    // Append the delete button to the li
+    li.append(deleteButton);
+
+    // Append the li to the unordered list
+    list.append(li);
+
+    // Add event listener to delete button
+    deleteButton.addEventListener('click', function () {
+      list.removeChild(li);
+      input.focus();
+    });
+
+    // Clear the input
+    input.value = '';
+  }
+
+  // Always return focus to the input
+  input.focus();
+});
 
