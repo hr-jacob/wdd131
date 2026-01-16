@@ -61,19 +61,19 @@ nav {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
 
 main figure {
   width: 100%;
-  max-width: 250px;
-  text-align: center;
+  max-width: 100%;
+  margin: 0;
 }
 
 main img {
   width: 100%;
   height: auto;
 }
+
 
 
