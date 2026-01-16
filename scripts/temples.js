@@ -7,8 +7,12 @@ lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
 // ===== HAMBURGER MENU =====
 const menuButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.nav ul');
+const navigation = document.querySelector('.navigation ul');
 
 menuButton.addEventListener('click', () => {
   navigation.classList.toggle('show');
+
+  // Toggle icon ☰ / X
+  menuButton.textContent =
+    navigation.classList.contains('show') ? '✖' : '☰';
 });
