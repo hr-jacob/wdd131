@@ -60,13 +60,13 @@ nav {
 
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;   /* 👈 CLAVE */
+  align-items: center;
   gap: 1rem;
 }
 
 main figure {
-  flex: 1 1 250px;
+  width: 100%;
   max-width: 250px;
   text-align: center;
 }
@@ -75,3 +75,4 @@ main img {
   width: 100%;
   height: auto;
 }
+
