@@ -31,3 +31,8 @@ main {
   max-width: 250px;
   text-align: center;
 }
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
