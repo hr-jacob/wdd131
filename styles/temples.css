@@ -47,15 +47,11 @@ header h1 {
    Hamburger Button (RIGHT SIDE)
 ------------------------------*/
 .menu-toggle {
-  display: block;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;          /* 👈 THIS puts it on the right */
-  font-size: 1.8rem;
-  cursor: pointer;
   background: none;
   border: none;
-  color: var(--light);
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* -----------------------------
@@ -64,26 +60,40 @@ header h1 {
 nav ul {
   display: none;
   flex-direction: column;
+  background-color: #4b1366;
   list-style: none;
-  background-color: var(--primary);
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Show menu when JS toggles class */
+/* Show menu when toggled */
 nav ul.show {
   display: flex;
 }
 
 nav ul li a {
-  display: block;
+  color: #ffffff;
   padding: 0.75rem 1rem;
-  color: var(--light);
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  display: block;
 }
 
 nav ul li a:hover {
   background-color: var(--secondary);
+}
+@media (min-width: 500px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: transparent;
+  }
 }
 
 /* -----------------------------
