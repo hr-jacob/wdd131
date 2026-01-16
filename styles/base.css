@@ -10,6 +10,7 @@ body {
 header {
   background-color: #1f4d6b;
   color: #ffffff;
+  position: relative;
 }
 
 #course-title {
@@ -20,14 +21,27 @@ header {
   font-weight: 700;
 }
 
-/* Navigation */
-nav {
+/* ================= HAMBURGER ================= */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* ================= NAVIGATION ================= */
+.navigation {
   display: flex;
   justify-content: space-around;
   background-color: #2c2c2c;
 }
 
-nav a {
+.navigation a {
   color: #ffffff;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
@@ -35,7 +49,7 @@ nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-nav a:hover {
+.navigation a:hover {
   background-color: #f4f6f8;
   color: #2c2c2c;
 }
@@ -52,22 +66,14 @@ main h1 {
   margin-bottom: 2rem;
 }
 
-/* ================= CARD GRID ================= */
-.cards {
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* LEFT card wider */
-  gap: 1.5rem;
-}
-
 /* ================= CARDS ================= */
-/* ================= CARD GRID ================= */
 .cards {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
 }
 
-/* ================= CARDS ================= */
+/* ================= CARD ================= */
 .card {
   background-color: #ffffff;
   border-radius: 8px;
@@ -121,20 +127,6 @@ main h1 {
   text-decoration: underline;
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .card-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-
 /* ================= FOOTER ================= */
 footer {
   background-color: #1f4d6b;
@@ -149,8 +141,25 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide nav by default */
+  .navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Show nav when JS toggles */
+  .navigation.show {
+    display: flex;
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }
@@ -159,9 +168,5 @@ footer p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  nav {
-    flex-direction: column;
   }
 }
