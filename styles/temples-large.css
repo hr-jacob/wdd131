@@ -13,11 +13,14 @@
   .navigation a {
     padding: 0.5rem 1rem;
   }
-}
 
- main {
+  /* ✅ GRID SOLO EN PANTALLA GRANDE */
+  main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
+    justify-items: center;
   }
+}
+
 
