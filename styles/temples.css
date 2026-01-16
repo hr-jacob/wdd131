@@ -53,3 +53,7 @@ header {
 .navigation {
   display: flex;
 }
+
+nav {
+  display: flex;
+}
