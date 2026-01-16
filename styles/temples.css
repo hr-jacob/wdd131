@@ -50,11 +50,6 @@ header {
   background-color: #8a2be2;
 }
 
-/* Show when hamburger clicked */
-.navigation ul.show {
-  display: flex;
-}
-
 .navigation {
   display: flex;
 }
