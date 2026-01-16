@@ -11,8 +11,5 @@ const navigation = document.querySelector('.navigation ul');
 
 menuButton.addEventListener('click', () => {
   navigation.classList.toggle('show');
-
-  // Toggle icon ☰ / X
-  menuButton.textContent =
-    navigation.classList.contains('show') ? '✖' : '☰';
 });
+

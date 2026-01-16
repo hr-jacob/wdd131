@@ -50,17 +50,6 @@ header {
   background-color: #8a2be2;
 }
 
-
-/* MOBILE NAV DEFAULT */
-.navigation ul {
-  display: none;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #4b1366;
-}
-
 /* Show when hamburger clicked */
 .navigation ul.show {
   display: flex;
