@@ -19,20 +19,3 @@ main {
   display: grid;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;        /* 🔑 permite varias filas */
-  justify-content: center;
-  gap: 1rem;              /* espacio entre fotos */
-}
-
-.gallery figure {
-  flex: 1 1 250px;   /* base de cada foto */
-  max-width: 250px;
-  text-align: center;
-}
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
