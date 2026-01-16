@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+
+  /* Navigation */
+  .menu-toggle {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+  }
+
+  /* Grid Layout */
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
