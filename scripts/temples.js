@@ -6,10 +6,9 @@ yearSpan.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
 // ===== HAMBURGER MENU =====
-const menuButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const menuButton = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('.nav ul');
 
 menuButton.addEventListener('click', () => {
-  navigation.classList.toggle('open');
-  menuButton.classList.toggle('open');
+  navigation.classList.toggle('show');
 });
