@@ -7,7 +7,7 @@ lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
 // ===== HAMBURGER MENU =====
 const menuButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.nav ul');
+const navigation = document.querySelector('.nav a');
 
 menuButton.addEventListener('click', () => {
   navigation.classList.toggle('show');
