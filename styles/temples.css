@@ -23,7 +23,7 @@ body {
 }
 
 /* -----------------------------
-   Header & Navigation
+   Header & Navigation (Mobile First)
 ------------------------------*/
 header {
   background-color: var(--primary);
@@ -42,12 +42,28 @@ header h1 {
   font-size: 1.6rem;
 }
 
-/* Navigation (Flex) */
+/* Hamburger Button */
+.menu-toggle {
+  display: block;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--light);
+}
+
+/* Navigation - hidden by default (mobile) */
 nav ul {
   display: none;
   flex-direction: column;
   list-style: none;
   background-color: var(--primary);
+  width: 100%;
+}
+
+/* Show menu when JS toggles class */
+nav ul.show {
+  display: flex;
 }
 
 nav ul li a {
@@ -60,17 +76,6 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: var(--secondary);
-}
-
-/* Hamburger */
-.menu-toggle {
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* Show menu when active */
-nav ul.show {
-  display: flex;
 }
 
 /* -----------------------------
@@ -134,4 +139,32 @@ footer {
 
 footer p {
   margin: 0.25rem 0;
+}
+
+/* -----------------------------
+   Desktop View
+------------------------------*/
+@media screen and (min-width: 500px) {
+  /* Hide hamburger */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Show navigation horizontally */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: transparent;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Grid expands */
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }

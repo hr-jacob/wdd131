@@ -1,8 +1,15 @@
+// ===== FOOTER DATES =====
+const yearSpan = document.querySelector('#currentyear');
+const lastModified = document.querySelector('#lastModified');
 
-// Get the current year
-const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
+yearSpan.textContent = new Date().getFullYear();
+lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
-// Get the last modified date
-document.getElementById("lastModified").innerHTML =
-  "Last Modification: " + document.lastModified;
+// ===== HAMBURGER MENU =====
+const menuButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+menuButton.addEventListener('click', () => {
+  navigation.classList.toggle('open');
+  menuButton.classList.toggle('open');
+});
