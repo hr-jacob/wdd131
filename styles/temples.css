@@ -57,3 +57,7 @@ header {
 nav {
   display: flex;
 }
+
+.navigation ul.show {
+  display: flex;
+}
