@@ -24,10 +24,6 @@ header {
   cursor: pointer;
 }
 
-main {
-  display: grid;
-}
-
 /* NAV (mobile first) */
 .navigation ul {
   display: none; /* 🔑 hidden by default */
