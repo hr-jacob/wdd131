@@ -58,20 +58,20 @@ nav {
   display: flex;
 }
 
-.gallery {
+main {
   display: flex;
-  flex-wrap: wrap;        /* 🔑 permite varias filas */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;              /* espacio entre fotos */
+  gap: 1rem;
 }
 
-.gallery figure {
-  flex: 1 1 250px;   /* base de cada foto */
+main figure {
+  flex: 1 1 250px;
   max-width: 250px;
   text-align: center;
 }
-.gallery img {
+
+main img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
 }
