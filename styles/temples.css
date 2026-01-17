@@ -50,14 +50,6 @@ header {
   background-color: #8a2be2;
 }
 
-.navigation {
-  display: flex;
-}
-
-nav {
-  display: flex;
-}
-
 main {
   display: flex;
   flex-direction: column;
