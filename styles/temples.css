@@ -1,22 +1,29 @@
-/* HEADER */
+/* ===== RESET BÁSICO ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADER (MÓVIL) ===== */
 header {
   background-color: #4b1366;
   color: #fff;
-  position: relative;
   padding: 1rem;
+  position: relative;
 }
 
-/* Title */
+/* Título */
 #course-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Hamburger button (RIGHT) */
+/* Botón hamburguesa */
 .menu-toggle {
   position: absolute;
-  right: 1rem;
   top: 1rem;
+  right: 1rem;
   font-size: 2rem;
   background: none;
   border: none;
@@ -24,16 +31,15 @@ header {
   cursor: pointer;
 }
 
-/* NAV (mobile first) */
+/* ===== NAV (MÓVIL – OCULTO POR DEFECTO) ===== */
 .navigation ul {
-  display: none; /* 🔑 hidden by default */
+  display: none;                 /* 🔑 OCULTO */
   list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
+  margin-top: 1rem;
   background-color: #4b1366;
 }
 
-/* Show menu when toggled */
+/* Cuando se hace click */
 .navigation ul.show {
   display: flex;
   flex-direction: column;
@@ -41,30 +47,50 @@ header {
 
 /* Links */
 .navigation a {
+  display: block;
   color: #fff;
   text-decoration: none;
   padding: 0.75rem 1rem;
+  text-align: center;
 }
 
 .navigation a:hover {
   background-color: #8a2be2;
 }
 
+/* ===== MAIN (MÓVIL = UNA COLUMNA) ===== */
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
 main figure {
   width: 100%;
-  max-width: 100%;
-  margin: 0;
+  max-width: 350px;
+  text-align: center;
 }
 
 main img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #4b1366;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
 
 

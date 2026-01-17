@@ -1,59 +1,38 @@
 @media (min-width: 500px) {
+
   main {
-    max-width: 900px;   /* 👈 ancho controlado */
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
-    
   }
-
-  .menu-toggle {
-    display: none;}
 
   main figure {
     width: 100%;
     margin: 0;
-    text-align: center;   /* 👈 CENTRA TEXTO */
+    text-align: center;
   }
 
   main img {
     width: 100%;
     height: auto;
-    display: block;       /* 👈 evita espacios raros */
+    display: block;
   }
-}
 
-header {
-  display: flex;                 /* 👈 los pone en fila */
-  align-items: center;           /* 👈 centra verticalmente */
-  justify-content: space-between;/* 👈 separa title y nav */
-  background-color: #4b1366;
-  color: #fff;
-  padding: 1rem;
-}
-
+  /* NAV VISIBLE EN GRANDE */
   .navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
-    margin: 0;
   }
 
   .navigation a {
     padding: 0.5rem 1rem;
   }
-  
-  h1 {
-  text-align: center;
-}
 
-  footer {
-  background-color: #4b1366;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+  /* OCULTAR HAMBURGUESA */
+  .menu-toggle {
+    display: none;
+  }
 }
 
 
