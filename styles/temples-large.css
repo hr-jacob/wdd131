@@ -20,6 +20,15 @@
   }
 }
 
+header {
+  display: flex;                 /* 👈 los pone en fila */
+  align-items: center;           /* 👈 centra verticalmente */
+  justify-content: space-between;/* 👈 separa title y nav */
+  background-color: #4b1366;
+  color: #fff;
+  padding: 1rem;
+}
+
   .navigation ul {
     display: flex;
     flex-direction: row;
