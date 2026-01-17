@@ -18,6 +18,12 @@
     display: block;
   }
 
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   /* NAV VISIBLE EN GRANDE */
   .navigation ul {
     display: flex;
