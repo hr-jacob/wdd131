@@ -1,5 +1,7 @@
 @media (min-width: 500px) {
   main {
+    max-width: 900px;   /* 👈 ancho controlado */
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
