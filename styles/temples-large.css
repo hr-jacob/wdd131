@@ -1,18 +1,22 @@
 @media (min-width: 500px) {
 
-  main {
+  main.gallery {
+    max-width: 1000px;      /* 👈 controla el ancho total */
+    margin: 0 auto;         /* 👈 centra TODO el grid */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
+    gap: 1.5rem;
+    justify-items: center;  /* 👈 centra cada imagen */
   }
 
-  main figure {
+  main.gallery figure {
     width: 100%;
+    max-width: 280px;       /* 👈 tamaño uniforme */
     margin: 0;
     text-align: center;
   }
 
-  main img {
+  main.gallery img {
     width: 100%;
     height: auto;
     display: block;
