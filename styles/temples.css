@@ -1,11 +1,9 @@
-/* ===== RESET BÁSICO ===== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ===== HEADER (MÓVIL) ===== */
 header {
   background-color: #4b1366;
   color: #fff;
@@ -13,13 +11,11 @@ header {
   position: relative;
 }
 
-/* Título */
 #course-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Botón hamburguesa */
 .menu-toggle {
   position: absolute;
   top: 1rem;
@@ -31,21 +27,18 @@ header {
   cursor: pointer;
 }
 
-/* ===== NAV (MÓVIL – OCULTO POR DEFECTO) ===== */
 .navigation ul {
-  display: none;                 /* 🔑 OCULTO */
+  display: none;              
   list-style: none;
   margin-top: 1rem;
   background-color: #4b1366;
 }
 
-/* Cuando se hace click */
 .navigation ul.show {
   display: flex;
   flex-direction: column;
 }
 
-/* Links */
 .navigation a {
   display: block;
   color: #fff;
@@ -58,7 +51,6 @@ header {
   background-color: #8a2be2;
 }
 
-/* ===== MAIN (MÓVIL = UNA COLUMNA) ===== */
 main {
   display: flex;
   flex-direction: column;
@@ -79,13 +71,11 @@ main img {
   display: block;
 }
 
-/* ===== TÍTULO ===== */
 h1 {
   text-align: center;
   margin: 1rem 0;
 }
 
-/* ===== FOOTER ===== */
 footer {
   background-color: #4b1366;
   color: #fff;

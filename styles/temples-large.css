@@ -24,7 +24,6 @@
     align-items: center;
   }
 
-  /* NAV VISIBLE EN GRANDE */
   .navigation ul {
     display: flex;
     flex-direction: row;
@@ -35,7 +34,6 @@
     padding: 0.5rem 1rem;
   }
 
-  /* OCULTAR HAMBURGUESA */
   .menu-toggle {
     display: none;
   }
