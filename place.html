@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Spain - culture, cities, and history">
+  <title>Explore Spain</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/place.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Explore Spain</h1>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <picture>
+      <!-- Large screens -->
+      <source
+        srcset="images/spain-large.jpg"
+        media="(min-width: 900px)">
+
+      <!-- Medium screens -->
+      <source
+        srcset="images/spain-medium.jpg"
+        media="(min-width: 500px)">
+
+      <!-- Small screens (fallback) -->
+      <img
+        src="images/spain-small.jpg"
+        alt="Landscape view of Spain"
+        width="800"
+        height="450">
+    </picture>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="content">
+      <h2>Why Visit Spain?</h2>
+      <p>
+        Spain offers a rich mix of history, architecture, cuisine, and vibrant
+        culture. From historic cities to beautiful coastlines, there is
+        something for everyone.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Popular Destinations</h2>
+      <ul>
+        <li>Barcelona</li>
+        <li>Madrid</li>
+        <li>Seville</li>
+        <li>Valencia</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; <span id="year"></span> Explore Spain</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
