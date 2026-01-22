@@ -1,26 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #AA151B;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+/* =========================
+   Mobile Styles Only
+========================= */
 
 main {
   padding: 1rem;
@@ -31,11 +11,7 @@ section {
   margin-bottom: 2rem;
 }
 
-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
+/* DATA SECTION */
 .data ul {
   list-style: none;
   padding: 0;
@@ -45,6 +21,7 @@ section h2 {
   margin: 0.5rem 0;
 }
 
+/* WEATHER SECTION */
 .weather p {
   margin: 0.5rem 0;
 }
@@ -54,12 +31,4 @@ section h2 {
   height: auto;
   margin: 1rem auto;
   display: block;
-}
-
-footer {
-  background-color: #AA151B;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
 }
