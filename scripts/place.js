@@ -1,25 +1,25 @@
 // =========================
-// Footer dates
+// Footer: current year & last modified
 // =========================
-const yearSpan = document.querySelector("#currentyear");
+const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
-yearSpan.textContent = new Date().getFullYear();
+currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 
 // =========================
-// Weather – Static values
+// Weather: static values
 // =========================
-// (Estos valores deben coincidir con lo que muestras en el HTML)
-const temperature = 20;   // °C (ejemplo)
-const windSpeed = 10;     // km/h (ejemplo)
+// These values must match the values shown in the HTML
+const temperature = 10; // °C
+const windSpeed = 5;    // km/h
 
-const windChillSpan = document.querySelector("#windchill");
+const windChillElement = document.querySelector("#windchill");
 
 
 // =========================
-// Wind Chill Function
+// Wind Chill function
 // =========================
 function calculateWindChill(temp, speed) {
   return (
@@ -32,10 +32,11 @@ function calculateWindChill(temp, speed) {
 
 
 // =========================
-// Wind Chill Logic
+// Wind Chill logic
 // =========================
 if (temperature <= 10 && windSpeed > 4.8) {
-  windChillSpan.textContent = `${calculateWindChill(temperature, windSpeed)} °C`;
+  windChillElement.textContent = `${calculateWindChill(temperature, windSpeed)} °C`;
 } else {
-  windChillSpan.textContent = "N/A";
+  windChillElement.textContent = "N/A";
 }
+
