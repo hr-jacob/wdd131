@@ -6,67 +6,57 @@
   <meta name="description" content="Discover Spain - culture, cities, and history">
   <title>Spain</title>
 
-  <!-- CSS -->
-    <link rel="stylesheet" href="styles/place-mobile.css">
-    <link rel="stylesheet" href="styles/place.css" media="(min-width: 800px)">
+<link rel="stylesheet" href="styles/place-mobile.css">
+<link rel="stylesheet" href="styles/place.css" media="(min-width: 800px)">
 
-  <!-- JavaScript -->
-  <script src="scripts/place.js" defer></script>
+<script src="scripts/place.js" defer></script>
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
+<header>
     <h1>Spain</h1>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
+</header>
+    <section class="hero">
         <picture>
             <source media="(min-width: 900px)" srcset="images/spain-large.webp">
             <source media="(min-width: 500px)" srcset="images/spain-medium.webp">
             <img src="images/spain-small.webp" alt="Landscape view of Spain">
         </picture>
      </section>
-
-  <!-- MAIN CONTENT -->
+     
 <main>
-  <!-- DATA SECTION -->
-<section class="data">
-  <h2>Data</h2>
-  <ul>
-    <li><strong>Area:</strong> 505,990 sq km</li>
-    <li><strong>Population:</strong> 48,000,000</li>
-    <li><strong>Capital:</strong> Madrid</li>
-    <li><strong>Languages:</strong> Spanish (Castilian)</li>
-    <li><strong>Currency:</strong> Euro (€)</li>
-    <li><strong>Time Zone:</strong> UTC+1</li>
-    <li><strong>Calling Code:</strong> +34</li>
-    <li><strong>Internet TLD:</strong> .es</li>
-  </ul>
-</section>
+    <section class="data">
+    <h2>Data</h2>
+    <ul>
+        <li><strong>Area:</strong> 505,990 sq km</li>
+        <li><strong>Population:</strong> 48,000,000</li>
+        <li><strong>Capital:</strong> Madrid</li>
+        <li><strong>Languages:</strong> Spanish (Castilian)</li>
+        <li><strong>Currency:</strong> Euro (€)</li>
+        <li><strong>Time Zone:</strong> UTC+1</li>
+        <li><strong>Calling Code:</strong> +34</li>
+        <li><strong>Internet TLD:</strong> .es</li>
+    </ul>
+    </section>
+    <section class="weather">
+        <h2>Weather</h2>
 
-  <!-- WEATHER SECTION -->
-  <section class="weather">
-    <h2>Weather</h2>
+        <img
+            src="images/weather.svg"
+            alt="Partly cloudy weather icon"
+            class="weather-icon">
 
-      <img
-        src="images/weather.svg"
-        alt="Partly cloudy weather icon"
-        class="weather-icon">
-
-    <p><strong>Temperature:</strong> 10°C</p>
-    <p><strong>Conditions:</strong> Partly Cloudy</p>
-    <p><strong>Wind:</strong> 5 km/h</p>
-    <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
-  </section>
+        <p><strong>Temperature:</strong> 10°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 5 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+    </section>
 </main>
-
-  <footer>
+<footer>
     <p>
       &copy; <span id="currentyear"></span> Jacob Herrera | Mexico 🇲🇽
     </p>
     <p id="lastModified"></p>
-  </footer>
+</footer>
 </body>
 </html>
