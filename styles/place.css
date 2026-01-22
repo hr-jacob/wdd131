@@ -1,3 +1,17 @@
+/* =========================
+   Global CSS Variables
+========================= */
+:root {
+  --primary-color: #AA151B;   /* Spain red */
+  --secondary-color: #F1BF00; /* Spain yellow */
+  --background-color: #ffffff;
+  --text-color: #222;
+  --accent-color: #f4f4f4;
+
+  --font-heading: 'Georgia', serif;
+  --font-body: 'Arial', sans-serif;
+}
+
 @media (min-width: 800px) {
   main {
     display: grid;
@@ -15,4 +29,3 @@
     display: none;
   }
 }
-
