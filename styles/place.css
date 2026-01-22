@@ -12,13 +12,118 @@
   --font-body: 'Arial', sans-serif;
 }
 
+/* =========================
+   Base Styles
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* =========================
+   Header & Navigation
+========================= */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   Main Layout (Wireframe Match)
+========================= */
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: var(--accent-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid var(--secondary-color);
+}
+
+section h2 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Weather Section
+========================= */
+.weather {
+  position: relative;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Media Query – Large View
+========================= */
 @media (min-width: 800px) {
+
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
   }
 
+  section {
+    margin-bottom: 0;
+  }
+
+  /* Weather icon pseudo-element */
   .weather h2::after {
     content: " ☀️";
     margin-left: 0.5rem;
@@ -26,6 +131,14 @@
   }
 
   .weather-icon {
-    display: none;
+  display: none;
+}
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 }
