@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ===== FOOTER ===== */
   document.querySelector('#currentyear').textContent =
     new Date().getFullYear();
   document.querySelector('#lastModified').textContent =
     `Last Modification: ${document.lastModified}`;
 
-  /* ===== MENU TOGGLE ===== */
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.navigation ul');
 
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation.classList.toggle('show');
   });
 
-  /* ===== TEMPLES ARRAY ===== */
   const temples = [
     {
       templeName: "Aba Nigeria",
@@ -98,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  /* ===== DISPLAY ===== */
   const templesContainer = document.querySelector('#temples');
 
   function displayTemples(list) {
@@ -120,8 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function getYear(date) {
     return Number(date.split(',')[0]);
   }
-
-  /* ===== FILTER NAV (FIXED) ===== */
   document.querySelector('#home').addEventListener('click', e => {
     e.preventDefault();
     displayTemples(temples);
@@ -147,7 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     displayTemples(temples.filter(t => t.area < 10000));
   });
 
-  /* ===== INITIAL LOAD ===== */
   displayTemples(temples);
 
 });
