@@ -77,7 +77,7 @@ const temples = [
   dedicated: "2019, March, 10",
   area: 41010,
   imageUrl:
-  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/1-Rome-Temple-2160936.jpg"
 },
 {
   templeName: "Paris France",
