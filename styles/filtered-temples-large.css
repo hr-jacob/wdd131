@@ -42,3 +42,9 @@
     display: none;
   }
 }
+
+@media (min-width: 1024px) {
+  #temples {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
