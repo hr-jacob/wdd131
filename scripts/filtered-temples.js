@@ -148,4 +148,63 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ===== INITIAL LOAD ===== */
   displayTemples(temples);
 
+  // Helper: get year from "YYYY, Month, Day"
+function getYear(dedicated) {
+  return Number(dedicated.split(",")[0]);
+}
+
+// HOME – show all temples
+document.querySelector('#home').addEventListener('click', () => {
+  displayTemples(temples);
+});
+
+// OLD – before 1900
+document.querySelector('#old').addEventListener('click', () => {
+  const oldTemples = temples.filter(
+    temple => getYear(temple.dedicated) < 1900
+  );
+  displayTemples(oldTemples);
+});
+
+// NEW – after 2000
+document.querySelector('#new').addEventListener('click', () => {
+  const newTemples = temples.filter(
+    temple => getYear(temple.dedicated) > 2000
+  );
+  displayTemples(newTemples);
+});
+
+// LARGE – over 90,000 sq ft
+document.querySelector('#large').addEventListener('click', () => {
+  const largeTemples = temples.filter(
+    temple => temple.area > 90000
+  );
+  displayTemples(largeTemples);
+});
+
+// SMALL – under 10,000 sq ft
+document.querySelector('#small').addEventListener('click', () => {
+  const smallTemples = temples.filter(
+    temple => temple.area < 10000
+  );
+  displayTemples(smallTemples);
+});
+
+function displayTemples(templesList) {
+  templesContainer.innerHTML = "";
+
+  templesList.forEach(temple => {
+    const card = document.createElement('article');
+
+    card.innerHTML = `
+      <h2>${temple.templeName}</h2>
+      <p>Location: ${temple.location}</p>
+      <p>Dedicated: ${temple.dedicated}</p>
+      <p>Size: ${temple.area.toLocaleString()} sq ft</p>
+      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+    `;
+
+    templesContainer.appendChild(card);
+  });
+}
 });
