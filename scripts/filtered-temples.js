@@ -77,7 +77,7 @@ const temples = [
   dedicated: "2019, March, 10",
   area: 41010,
   imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome_italy_temple_lds_991561.jpg"
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome_italy_temple_lds_991561.jpg"
 },
 {
   templeName: "Paris France",
@@ -85,7 +85,7 @@ const temples = [
   dedicated: "2017, May, 21",
   area: 44175,
   imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris_france_temple_lds_956182.jpg"
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris_france_temple_lds_956182.jpg"
 },
 {
   templeName: "San Diego California",
@@ -93,7 +93,7 @@ const temples = [
   dedicated: "1993, April, 25",
   area: 72000,
   imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san_diego_california_temple_lds_906060.jpg"
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san_diego_california_temple_lds_906060.jpg"
 }
 
 ];
