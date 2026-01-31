@@ -71,31 +71,31 @@ const temples = [
 
   //three new temples 
 
-    {
-    templeName: "Rome Italy",
-    location: "Rome Italy",
-    dedicated: "2019, March, 10",
-    area: 41010,
-    imageUrl:
-    "https://content.churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
-  },
-  {
-    templeName: "Paris France",
-    location: "Paris France",
-    dedicated: "2017, May, 21",
-    area: 44175,
+{
+  templeName: "Rome Italy",
+  location: "Rome, Italy",
+  dedicated: "2019, March, 10",
+  area: 41010,
+  imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome_italy_temple_lds_991561.jpg"
+},
+{
+  templeName: "Paris France",
+  location: "Paris, France",
+  dedicated: "2017, May, 21",
+  area: 44175,
+  imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris_france_temple_lds_956182.jpg"
+},
+{
+  templeName: "San Diego California",
+  location: "San Diego, California",
+  dedicated: "1993, April, 25",
+  area: 72000,
+  imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san_diego_california_temple_lds_906060.jpg"
+}
 
-    imageUrl:
-    "https://content.churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
-  },
-  {
-    templeName: "San Diego California",
-    location: "San Diego, California",
-    dedicated: "1993, April, 25",
-    area: 72000,
-    imageUrl:
-    "https://content.churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-9060-main.jpg"
-  },
 ];
 
 const templesContainer = document.querySelector('#temples');
@@ -132,5 +132,4 @@ function displayTemples(temples) {
   });
 }
 
-// Call the function
 displayTemples(temples);
