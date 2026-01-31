@@ -1,24 +1,18 @@
-
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ===== FOOTER ===== */
-  const yearSpan = document.querySelector('#currentyear');
-  const lastModified = document.querySelector('#lastModified');
-
-  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-  if (lastModified) {
-    lastModified.textContent = `Last Modification: ${document.lastModified}`;
-  }
+  document.querySelector('#currentyear').textContent =
+    new Date().getFullYear();
+  document.querySelector('#lastModified').textContent =
+    `Last Modification: ${document.lastModified}`;
 
   /* ===== MENU TOGGLE ===== */
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.navigation ul');
 
-  if (menuButton && navigation) {
-    menuButton.addEventListener('click', () => {
-      navigation.classList.toggle('show');
-    });
-  }
+  menuButton.addEventListener('click', () => {
+    navigation.classList.toggle('show');
+  });
 
   /* ===== TEMPLES ARRAY ===== */
   const temples = [
@@ -104,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  /* ===== DISPLAY FUNCTION ===== */
+  /* ===== DISPLAY ===== */
   const templesContainer = document.querySelector('#temples');
 
   function displayTemples(list) {
@@ -123,37 +117,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ===== HELPER ===== */
   function getYear(date) {
     return Number(date.split(',')[0]);
   }
 
-  /* ===== FILTER NAV ===== */
-  const home = document.querySelector('#home');
-  const old = document.querySelector('#old');
-  const newer = document.querySelector('#new');
-  const large = document.querySelector('#large');
-  const small = document.querySelector('#small');
+  /* ===== FILTER NAV (FIXED) ===== */
+  document.querySelector('#home').addEventListener('click', e => {
+    e.preventDefault();
+    displayTemples(temples);
+  });
 
-  if (home) home.addEventListener('click', () => displayTemples(temples));
+  document.querySelector('#old').addEventListener('click', e => {
+    e.preventDefault();
+    displayTemples(temples.filter(t => getYear(t.dedicated) < 1900));
+  });
 
-  if (old) old.addEventListener('click', () =>
-    displayTemples(temples.filter(t => getYear(t.dedicated) < 1900))
-  );
+  document.querySelector('#new').addEventListener('click', e => {
+    e.preventDefault();
+    displayTemples(temples.filter(t => getYear(t.dedicated) > 2000));
+  });
 
-  if (newer) newer.addEventListener('click', () =>
-    displayTemples(temples.filter(t => getYear(t.dedicated) > 2000))
-  );
+  document.querySelector('#large').addEventListener('click', e => {
+    e.preventDefault();
+    displayTemples(temples.filter(t => t.area > 90000));
+  });
 
-  if (large) large.addEventListener('click', () =>
-    displayTemples(temples.filter(t => t.area > 90000))
-  );
-
-  if (small) small.addEventListener('click', () =>
-    displayTemples(temples.filter(t => t.area < 10000))
-  );
+  document.querySelector('#small').addEventListener('click', e => {
+    e.preventDefault();
+    displayTemples(temples.filter(t => t.area < 10000));
+  });
 
   /* ===== INITIAL LOAD ===== */
   displayTemples(temples);
 
 });
+
