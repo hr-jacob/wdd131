@@ -96,5 +96,41 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-9060-main.jpg"
   },
-  // Add more temple objects here...
 ];
+
+const templesContainer = document.querySelector('#temples');
+
+function displayTemples(temples) {
+  temples.forEach(temple => {
+
+    // Create elements
+    const card = document.createElement('article');
+    const name = document.createElement('h2');
+    const location = document.createElement('p');
+    const dedicated = document.createElement('p');
+    const area = document.createElement('p');
+    const image = document.createElement('img');
+
+    // Populate content
+    name.textContent = temple.templeName;
+    location.textContent = `Location: ${temple.location}`;
+    dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+    area.textContent = `Size: ${temple.area.toLocaleString()} sq ft`;
+
+    image.src = temple.imageUrl;
+    image.alt = temple.templeName;
+    image.loading = 'lazy';
+
+    // Append elements
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(image);
+
+    templesContainer.appendChild(card);
+  });
+}
+
+// Call the function
+displayTemples(temples);
