@@ -76,6 +76,27 @@ h1 {
   margin: 1rem 0;
 }
 
+#temples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#temples article {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#temples img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
 footer {
   background-color: #4b1366;
   color: #fff;
