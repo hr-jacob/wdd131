@@ -11,12 +11,8 @@ margin-left: 5rem;
 
 /* Footer alineado al formulario */
 footer {
-  max-width: 600px;       /* igual que main */
-  margin: 2rem auto 0;    /* centrado horizontal con margen arriba */
-  text-align: center;     /* centra los <p> dentro del footer */
-  padding: 1rem;          /* opcional, para separar del borde */
-  background: #f9f9f9;    /* opcional, para ver el bloque */
-  border-radius: 8px;      /* opcional, si quieres igualar main */
+text-align: center;
+max-width: 600px;
 }
 
 main {
