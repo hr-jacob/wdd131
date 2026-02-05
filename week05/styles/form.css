@@ -23,6 +23,7 @@ box-shadow: 0 0 10px rgba(0,0,0,0.1);
 margin-bottom: 1.5rem;
 display: flex;
 flex-direction: column;
+font-weight: bold;
 }
 
 label {
