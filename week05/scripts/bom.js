@@ -2,38 +2,71 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
-button.addEventListener('click', function () {
+// Get chapters from localStorage OR empty array
+let chaptersArray = getChapterList() || [];
 
-  if (input.value.trim() !== '') {
-
-    // Create a li element
-    const li = document.createElement('li');
-
-    // Create a delete button
-    const deleteButton = document.createElement('button');
-
-    // Populate the li with the input value
-    li.textContent = input.value;
-
-    // Populate the button with ❌
-    deleteButton.textContent = '❌';
-
-    // Append the delete button to the li
-    li.append(deleteButton);
-
-    // Append the li to the unordered list
-    list.append(li);
-
-    // Add event listener to delete button
-    deleteButton.addEventListener('click', function () {
-      list.removeChild(li);
-      input.focus();
-    });
-
-    // Clear the input
-    input.value = '';
-  }
-
-  // Always return focus to the input
-  input.focus();
+// Display existing chapters on page load
+chaptersArray.forEach(chapter => {
+  displayList(chapter);
 });
+
+// Button click event
+button.addEventListener('click', () => {
+  if (input.value !== '') {
+
+    displayList(input.value);        // Show on page
+    chaptersArray.push(input.value); // Add to array
+    setChapterList();                // Save to localStorage
+
+    input.value = '';                // Clear input
+    input.focus();                   // Focus input
+  }
+});
+
+
+// Display chapter in list
+function displayList(item) {
+
+  const li = document.createElement('li');
+  const deleteButton = document.createElement('button');
+
+  li.textContent = item;
+
+  deleteButton.textContent = '❌';
+
+  li.append(deleteButton);
+  list.append(li);
+
+  // Delete button
+  deleteButton.addEventListener('click', () => {
+    list.removeChild(li);
+    deleteChapter(li.textContent);
+    input.focus();
+  });
+}
+
+
+// Save array to localStorage
+function setChapterList() {
+  localStorage.setItem('chapters', JSON.stringify(chaptersArray));
+}
+
+
+// Get array from localStorage
+function getChapterList() {
+  return JSON.parse(localStorage.getItem('chapters'));
+}
+
+
+// Delete chapter
+function deleteChapter(chapter) {
+
+  // Remove ❌ from end
+  chapter = chapter.slice(0, chapter.length - 1);
+
+  // Remove from array
+  chaptersArray = chaptersArray.filter(item => item !== chapter);
+
+  // Update localStorage
+  setChapterList();
+}
