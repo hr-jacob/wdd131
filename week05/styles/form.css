@@ -67,10 +67,14 @@ margin-right: 1rem;
 }
 
 footer {
-  text-align: center;    /* centra los textos dentro del footer */
-  max-width: 600px;      /* opcional: limita el ancho */
-  margin: 0 auto;        /* centra el bloque footer horizontalmente */
-  padding: 1rem 0;       /* opcional: espacio arriba/abajo */
+  display: flex;
+  flex-direction: column; /* organiza las líneas de arriba a abajo */
+  align-items: center;    /* centra horizontalmente todas las líneas */
+  justify-content: center; /* centra vertical si hay altura extra */
+  min-width: 100%;        /* ocupa todo el ancho de la página */
+  padding: 1rem 0;        /* opcional, espacio arriba y abajo */
+  text-align: center;     /* por si hay contenido interno adicional */
 }
+
 
 
