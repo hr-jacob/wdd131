@@ -3,17 +3,10 @@ color: #080808;
 text-align: left;
 }
 
-main {
+
+header {
     max-width: 600px;
-    margin: 2rem auto;   /* CENTRA */
-    background: rgb(255, 255, 255);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
-}
-
-
-header h1 {
+    margin: 2rem auto 0 auto; /* igual que main */
     text-align: center;
 }
 
