@@ -6,33 +6,34 @@
 <meta name="author" content="Jacob Herrera">
 <meta name="description" content="Product review form">
 <title>Product Review Form</title>
+
+<!-- CSS -->
 <link rel="stylesheet" href="styles/form.css">
 </head>
+
 <body>
 
-
 <header>
-<h1>Product Review</h1>
+  <h1>Product Review</h1>
 </header>
 
-
 <main>
-<form action="review.html" method="get">
 
+<form action="review.html" method="get">
 
 <!-- Product Name -->
 <div class="form-group">
-<label for="product">Product Name</label>
-<select id="product" name="product" required>
-<option value="" disabled selected>Select a Product ...</option>
-</select>
+  <label for="product">Product Name</label>
+
+  <select id="product" name="product" required>
+    <option value="" disabled selected>Select a Product ...</option>
+  </select>
 </div>
 
 
 <!-- Overall Rating -->
 <fieldset class="form-group">
 <legend>Overall Rating</legend>
-
 
 <label><input type="radio" name="rating" id="rate1" value="1" required> ☆</label>
 <label><input type="radio" name="rating" id="rate2" value="2"> ☆☆</label>
@@ -52,7 +53,6 @@
 <!-- Useful Features -->
 <fieldset class="form-group">
 <legend>Useful Features</legend>
-
 
 <label><input type="checkbox" name="features" value="Durability"> Durability</label>
 <label><input type="checkbox" name="features" value="Speed"> Speed</label>
@@ -76,4 +76,22 @@
 
 
 <!-- Submit -->
+<div class="form-group">
+<input type="submit" value="Submit Review">
+</div>
+
+</form>
+
+</main>
+
+
+<footer>
+  <p>&copy; 2026 | Jacob Herrera</p>
+</footer>
+
+
+<!-- JAVASCRIPT (THIS WAS MISSING) -->
+<script src="js/script.js"></script>
+
+</body>
 </html>
