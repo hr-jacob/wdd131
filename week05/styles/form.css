@@ -13,8 +13,10 @@ background-color: #0a0349
 
 footer p {
 text-align: center;
+color: #fff;
 max-width: 600px;
 margin-left: 4rem;
+background-color: #0a0349
 }
 
 main {
