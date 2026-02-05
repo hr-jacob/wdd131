@@ -67,8 +67,10 @@ margin-right: 1rem;
 }
 
 footer {
-  text-align: center;    /* centra los textos dentro */
-  max-width: 600px;      /* opcional, limita ancho */
+  text-align: center;    /* centra los textos dentro del footer */
+  max-width: 600px;      /* opcional: limita el ancho */
   margin: 0 auto;        /* centra el bloque footer horizontalmente */
+  padding: 1rem 0;       /* opcional: espacio arriba/abajo */
 }
+
 
