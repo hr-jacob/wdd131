@@ -9,23 +9,20 @@ max-width: 600px;
 margin-left: 5rem;
 }
 
-/* Footer alineado al formulario */
-main {
-  max-width: 600px;
-  margin: 2rem auto; /* auto centra horizontalmente */
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+footer {
+  max-width: 600px;   /* igual que main */
+  margin: 2rem auto;  /* centrado horizontal, con margen arriba y abajo */
+  text-align: center; /* centra el contenido dentro del footer */
+  padding: 1rem;
 }
 
-/* Footer alineado al main */
-footer {
-  max-width: 600px;     /* igual que main */
-  margin: 2rem auto;    /* centrado horizontal, espacio arriba y abajo */
-  text-align: center;   /* centra los párrafos dentro del footer */
-  padding: 1rem 0;      /* opcional */
-  color: #080808;       /* opcional, igual que el resto */
+main {
+max-width: 600px;
+margin: 2rem 2rem 2rem 2rem; /* izquierda */
+background: #fff;
+padding: 2rem;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .form-group {
