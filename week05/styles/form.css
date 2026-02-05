@@ -13,7 +13,6 @@ footer {
   max-width: 600px;   /* igual que main */
   margin: 2rem auto;  /* centrado horizontal, con margen arriba y abajo */
   text-align: center; /* centra el contenido dentro del footer */
-  padding: 1rem;
 }
 
 main {
