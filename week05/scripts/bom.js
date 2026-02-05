@@ -2,71 +2,59 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
-// Get chapters from localStorage OR empty array
-let chaptersArray = getChapterList() || [];
+// Load from localStorage or empty array
+let chaptersArray = JSON.parse(localStorage.getItem('chapters')) || [];
 
-// Display existing chapters on page load
+// Display saved chapters
 chaptersArray.forEach(chapter => {
   displayList(chapter);
 });
 
-// Button click event
+// Button click
 button.addEventListener('click', () => {
-  if (input.value !== '') {
 
-    displayList(input.value);        // Show on page
-    chaptersArray.push(input.value); // Add to array
-    setChapterList();                // Save to localStorage
+  if (input.value.trim() !== '') {
 
-    input.value = '';                // Clear input
-    input.focus();                   // Focus input
+    displayList(input.value);
+
+    chaptersArray.push(input.value);
+
+    localStorage.setItem('chapters', JSON.stringify(chaptersArray));
+
+    input.value = '';
+    input.focus();
   }
+
 });
 
 
-// Display chapter in list
+// Show chapter
 function displayList(item) {
 
   const li = document.createElement('li');
   const deleteButton = document.createElement('button');
 
   li.textContent = item;
-
   deleteButton.textContent = '❌';
 
   li.append(deleteButton);
   list.append(li);
 
-  // Delete button
+  // Delete
   deleteButton.addEventListener('click', () => {
+
     list.removeChild(li);
-    deleteChapter(li.textContent);
-    input.focus();
+
+    removeChapter(item);
+
   });
 }
 
 
-// Save array to localStorage
-function setChapterList() {
-  localStorage.setItem('chapters', JSON.stringify(chaptersArray));
-}
+// Remove from array + storage
+function removeChapter(chapter) {
 
-
-// Get array from localStorage
-function getChapterList() {
-  return JSON.parse(localStorage.getItem('chapters'));
-}
-
-
-// Delete chapter
-function deleteChapter(chapter) {
-
-  // Remove ❌ from end
-  chapter = chapter.slice(0, chapter.length - 1);
-
-  // Remove from array
   chaptersArray = chaptersArray.filter(item => item !== chapter);
 
-  // Update localStorage
-  setChapterList();
+  localStorage.setItem('chapters', JSON.stringify(chaptersArray));
 }
