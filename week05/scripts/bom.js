@@ -1,6 +1,6 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('ul');
+const list = document.querySelector('#list');
 
 // Load from localStorage or empty array
 let chaptersArray = JSON.parse(localStorage.getItem('chapters')) || [];
@@ -28,7 +28,7 @@ button.addEventListener('click', () => {
 });
 
 
-// Show chapter
+// Display item
 function displayList(item) {
 
   const li = document.createElement('li');
@@ -51,7 +51,7 @@ function displayList(item) {
 }
 
 
-// Remove from array + storage
+// Remove from storage
 function removeChapter(chapter) {
 
   chaptersArray = chaptersArray.filter(item => item !== chapter);
