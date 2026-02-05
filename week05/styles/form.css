@@ -9,10 +9,10 @@ max-width: 600px;
 margin-left: 5rem;
 }
 
-footer {
-  max-width: 600px;   
-  margin: 2rem auto; /* igual que main */
-  text-align: center;
+footer p {
+text-align: center;
+max-width: 600px;
+margin-left: 5rem;
 }
 
 main {
