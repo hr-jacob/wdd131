@@ -3,10 +3,12 @@ color: #080808;
 text-align: left;
 }
 
-header h1 {
-text-align: center;
-max-width: 600px;
-margin-left: 5rem;
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -66,8 +68,3 @@ fieldset label {
 margin-right: 1rem;
 }
 
-footer {
-text-align: center;
-max-width: 600px;
-margin-left: 5rem;
-}
