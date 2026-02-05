@@ -12,12 +12,12 @@ header {
 
 
 main {
-max-width: 600px;
-margin: 2rem 0 2rem 2rem; /* izquierda */
-background: #fff;
-padding: 2rem;
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 2rem auto;   /* CENTRA */
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
 .form-group {
