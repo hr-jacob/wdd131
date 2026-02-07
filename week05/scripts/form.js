@@ -1,12 +1,9 @@
-// Get the current year
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
-// Get the last modified date
 document.getElementById("lastModified").innerHTML =
   "Last Modification: " + document.lastModified;
 
-// Product Array (From Instructions)
 const products = [
   {
     id: "fc-1888",
@@ -35,7 +32,6 @@ const products = [
   }
 ];
 
-// Wait for page to load
 document.addEventListener("DOMContentLoaded", function () {
 
   const select = document.getElementById("product");
@@ -43,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
   products.forEach(product => {
     const option = document.createElement("option");
 
-    option.value = product.id;      // id → value
-    option.textContent = product.name; // name → text
+    option.value = product.id; 
+    option.textContent = product.name; 
 
     select.appendChild(option);
   });
