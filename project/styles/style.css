@@ -93,7 +93,6 @@ main .texto p {
 }
 
 
-
 footer {
     width: 100%;                          
     background-color: rgb(255,222,33);  /* Mismo color del header */
@@ -150,10 +149,4 @@ footer {
 }
 @media (max-width: 420px) {
   .grid-container { grid-template-columns: 1fr; }
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
