@@ -52,7 +52,6 @@ main {
 main img {
     width: 100%;             /* Ajusta el tamaño de la imagen (opcional) */
     height: auto;
-    object-fit: cover;
     border-radius: 10px;      /* Opcional */
 }
 
