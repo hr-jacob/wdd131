@@ -151,3 +151,9 @@ footer {
 @media (max-width: 420px) {
   .grid-container { grid-template-columns: 1fr; }
 }
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
