@@ -50,7 +50,9 @@ main {
 }
 
 .hero img {
-    width: 100%;             /* Ajusta el tamaño de la imagen (opcional) */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Contenedor de texto dentro del main */
