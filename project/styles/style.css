@@ -49,7 +49,7 @@ main {
     margin: 0 auto;     /* Centrado */
 }
 
-main img {
+.hero img {
     width: 100%;             /* Ajusta el tamaño de la imagen (opcional) */
 }
 
