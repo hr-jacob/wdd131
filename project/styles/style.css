@@ -51,7 +51,6 @@ main {
 
 main img {
     width: 100%;             /* Ajusta el tamaño de la imagen (opcional) */
-    border-radius: 10px;      /* Opcional */
 }
 
 /* Contenedor de texto dentro del main */
