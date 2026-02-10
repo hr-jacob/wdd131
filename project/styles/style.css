@@ -160,7 +160,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background: rgba(0, 0, 0, 0.45); /* negro transparente */
+    background: rgba(121, 77, 46, 0.7); /* mismo color del h1 */
     color: white;
 
     padding: 20px 30px;
