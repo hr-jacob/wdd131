@@ -114,10 +114,18 @@ footer {
 
 /* Si algún padre tiene display:flex y sus hijos toman 100%,
    este asegura que los items se comporten como celdas de grid */
-.grid-container > * {
-  width: auto;
-  max-width: 100%;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+
+  justify-items: center; /* 👈 centra horizontal */
+  align-items: center;   /* 👈 centra vertical */
+
+  padding: 20px;
   box-sizing: border-box;
+}
+
 }
 
 /* Estilo de cada tarjeta */
