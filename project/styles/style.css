@@ -116,7 +116,7 @@ footer {
    este asegura que los items se comporten como celdas de grid */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 25px;
 
   justify-items: center; /* 👈 centra horizontal */
@@ -126,15 +126,17 @@ footer {
   box-sizing: border-box;
 }
 
-}
-
 /* Estilo de cada tarjeta */
 .item {
   text-align: center;
   border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 18px;
+  border-radius: 10px;
   background: #fff;
+
+  /* Centrado + tamaño */
+  margin: 0 auto;
+  transform: scale(1.2); /* 👈 20% más grande */
 }
 
 /* Imagen dentro del item */
