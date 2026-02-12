@@ -203,7 +203,7 @@ footer {
 }
 
 .bloque:first-of-type {
-    margin-bottom: 15px; /* 👈 reduce espacio abajo */
+    margin-bottom: 10px; /* 👈 reduce espacio abajo */
 }
 
 main .texto h1 {
