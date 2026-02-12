@@ -181,7 +181,7 @@ footer {
 }
 
 /* Texto */
-.name { font-weight: 700; margin-top: 10px; }
+.name { font-weight: 700; margin-top: 10px; color: rgb(121, 77, 46); }
 .description { font-size: .95rem; color: rgb(121, 77, 46); }
 
 /* Responsivo: en pantallas pequeñas pasa a 1 columna, en tablet a 2 */
