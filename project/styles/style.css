@@ -163,6 +163,7 @@ footer {
     border-radius: 10px;
 
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Opcional: estilos del texto */
