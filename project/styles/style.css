@@ -231,4 +231,81 @@ main .texto h1 {
   .grid-container { grid-template-columns: 1fr; }
 }
 
-/*form container*/
+/* ===== FORMULARIO CENTRADO ===== */
+
+.form-container {
+    background: #fff;
+    max-width: 420px;
+    width: 100%;
+
+    padding: 30px 35px;
+    margin: 40px auto;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+/* Títulos */
+.form-container h2 {
+    color: rgb(121, 77, 46);
+    margin-bottom: 5px;
+}
+
+.form-container h3 {
+    color: rgb(121, 77, 46);
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+/* Grupos */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.input-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: rgb(121, 77, 46);
+}
+
+/* Inputs */
+.input-group input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: rgb(121, 77, 46);
+}
+
+/* Botón */
+.button-wrapper {
+    margin-top: 20px;
+}
+
+.button-wrapper button {
+    background: rgb(121, 77, 46);
+    color: white;
+
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-wrapper button:hover {
+    background: #5c3a22;
+}
+
