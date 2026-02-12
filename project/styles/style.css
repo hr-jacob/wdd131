@@ -163,7 +163,7 @@ footer {
     border-radius: 10px;
 
     text-align: center;
-    background: rgba(56, 55, 55, 0.2);
+    background: rgb(121, 77, 46);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
