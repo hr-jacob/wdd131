@@ -333,6 +333,7 @@ main .texto h1 {
     font-family: 'Great Vibes', cursive;
 
     font-size: 1em; /* usa el tamaño del padre */
+    font-weight: bold;
     color: #f5c542;
 
     text-shadow: 
