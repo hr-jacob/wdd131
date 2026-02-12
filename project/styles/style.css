@@ -309,37 +309,3 @@ main .texto h1 {
     background: #5c3a22;
 }
 
-/* ===== TARJETA GENERAL ABOUT US ===== */
-
-.about-card {
-    background: white;
-
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 40px;
-
-    border-radius: 15px;
-
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-}
-
-/* Ajustar bloques dentro */
-.about-card .bloque {
-    margin: 40px 0;
-}
-
-/* Centrar en móvil */
-@media (max-width: 768px) {
-    .about-card {
-        padding: 25px;
-    }
-
-    .about-card .bloque {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-card img {
-        margin-bottom: 15px;
-    }
-}
