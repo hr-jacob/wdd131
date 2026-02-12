@@ -207,7 +207,7 @@ main .texto h1 {
 }
 
 .texto p {
-    margin: 8px 0;   /* 👈 menos espacio arriba y abajo */
+    margin: 6px 0;   /* 👈 menos espacio arriba y abajo */
     line-height: 1.4; /* 👈 más compacto */
 }
 
