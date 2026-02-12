@@ -183,7 +183,7 @@ footer {
 /* about us page  */
 
 .bloque img {
-    width: 100px;      /* mismo tamaño que tus cards */
+    width: 110px;      /* mismo tamaño que tus cards */
     height: 100px;     /* ajusta según tu grid */
     object-fit: cover; /* no se deforman */
     border-radius: 8px;
