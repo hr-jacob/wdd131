@@ -106,7 +106,7 @@ footer {
 /* Asegúrate de que la clase sea exactamente .grid-container */
 .grid-container {
   display: grid !important; /* fuerza el grid si otra regla lo sobrescribe */
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columnas iguales */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 3 columnas iguales */
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
