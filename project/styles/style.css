@@ -184,7 +184,7 @@ footer {
 
 .bloque img {
     width: 180px;      /* mismo tamaño que tus cards */
-    height: 130px;     /* ajusta según tu grid */
+    height: 140px;     /* ajusta según tu grid */
     object-fit: cover; /* no se deforman */
     border-radius: 8px;
     flex-shrink: 0;    /* evita que se aplasten */
