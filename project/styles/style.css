@@ -187,7 +187,6 @@ footer {
     height: 180px;     /* ajusta según tu grid */
     object-fit: cover; /* no se deforman */
     border-radius: 8px;
-
     flex-shrink: 0;    /* evita que se aplasten */
 }
 
@@ -205,6 +204,11 @@ main .texto h1 {
     color: rgb(121, 77, 46);
 
     margin: 0 0 35px 0; /* 👈 solo abajo */
+}
+
+.texto p {
+    margin: 8px 0;   /* 👈 menos espacio arriba y abajo */
+    line-height: 1.4; /* 👈 más compacto */
 }
 
 
