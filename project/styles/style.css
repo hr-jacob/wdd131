@@ -192,10 +192,10 @@ footer {
 
 .bloque {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: center; /* 👈 centra imagen con el texto */
+    gap: 30px;
 
-    margin: 30px 50px; /* 👈 separación vertical */
+    margin: 40px 0;
 }
 
 main .texto h1 {
