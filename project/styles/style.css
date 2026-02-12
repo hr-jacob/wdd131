@@ -198,6 +198,10 @@ footer {
     margin: 30px 50px; /* 👈 separación vertical */
 }
 
+.bloque:first-of-type img {
+    margin-top: 25px; /* 👈 ajusta a tu gusto */
+}
+
 main .texto h1 {
     font-size: 30px;
     font-weight: bold;
