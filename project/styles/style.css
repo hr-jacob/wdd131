@@ -196,7 +196,7 @@ footer {
     align-items: center;
     gap: 30px;
 
-    margin: 30px 30px; /* 👈 separación vertical */
+    margin: 30px 50px; /* 👈 separación vertical */
 }
 
 main .texto h1 {
