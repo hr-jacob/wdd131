@@ -204,7 +204,7 @@ main .texto h1 {
     font-weight: bold;
     color: rgb(121, 77, 46);
 
-    margin: 0 0 25px 0; /* 👈 solo abajo */
+    margin: 0 0 35px 0; /* 👈 solo abajo */
 }
 
 
