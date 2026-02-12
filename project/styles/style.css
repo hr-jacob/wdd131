@@ -313,11 +313,12 @@ main .texto h1 {
 .banner-text {
     font-family: 'Great Vibes', cursive;
 
-    font-size: 7.5rem; /* tamaño grande */
-    color: #f5c542; /* dorado */
+    font-size: 5rem; /* 👈 MÁS GRANDE */
+    color: #f5c542;
 
     text-shadow: 
-        2px 2px 4px rgba(0,0,0,0.6);
+        2px 2px 6px rgba(0,0,0,0.7);
 
     margin: 0;
 }
+
