@@ -200,6 +200,7 @@ footer {
 
 .bloque:first-of-type img {
     margin-top: 70px; /* 👈 ajusta a tu gusto */
+    margin-bottom: 15px; /* 👈 reduce espacio abajo */
 }
 
 main .texto h1 {
