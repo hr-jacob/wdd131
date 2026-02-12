@@ -114,15 +114,9 @@ footer {
 
 /* Si algún padre tiene display:flex y sus hijos toman 100%,
    este asegura que los items se comporten como celdas de grid */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 25px;
-
-  justify-items: center; /* 👈 centra horizontal */
-  align-items: center;   /* 👈 centra vertical */
-
-  padding: 20px;
+.grid-container > * {
+  width: auto;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -130,13 +124,9 @@ footer {
 .item {
   text-align: center;
   border: 1px solid #ddd;
-  padding: 18px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 8px;
   background: #fff;
-
-  /* Centrado + tamaño */
-  margin: 0 auto;
-  transform: scale(1.2); /* 👈 20% más grande */
 }
 
 /* Imagen dentro del item */
@@ -170,24 +160,13 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    /* Fondo semi transparente */
-    background: rgba(121, 77, 46, 0.25);
-
-    /* Efecto borroso */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    /* Bordecito elegante */
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
+    background: rgba(121, 77, 46, 0.7); /* mismo color del h1 */
     color: white;
 
-    padding: 25px 35px;
-    border-radius: 15px;
+    padding: 20px 30px;
+    border-radius: 10px;
 
     text-align: center;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 /* Opcional: estilos del texto */
