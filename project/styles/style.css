@@ -323,4 +323,22 @@ main .texto h1 {
     margin: 0;
 }
 
+/* ===== FIX TAMAÑO BANNER ===== */
+
+.hero-text {
+    font-size: 5rem; /* 👈 fuerza el tamaño base */
+}
+
+.banner-text {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 1em; /* usa el tamaño del padre */
+    color: #f5c542;
+
+    text-shadow: 
+        2px 2px 6px rgba(0,0,0,0.7);
+
+    margin: 0;
+}
+
 
