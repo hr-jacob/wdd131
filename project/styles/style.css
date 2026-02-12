@@ -176,8 +176,9 @@ footer {
 
 .hero-text p {
     margin: 5px 0 0;
-    font-size: 1rem;
+    font-size: inherit; /* 👈 deja usar el tamaño real */
 }
+
 
 /* about us page  */
 
@@ -313,7 +314,7 @@ main .texto h1 {
 .banner-text {
     font-family: 'Great Vibes', cursive;
 
-    font-size: 5rem; /* 👈 MÁS GRANDE */
+    font-size: 5rem; /* grande */
     color: #f5c542;
 
     text-shadow: 
@@ -321,4 +322,5 @@ main .texto h1 {
 
     margin: 0;
 }
+
 
