@@ -308,3 +308,16 @@ main .texto h1 {
     background: #5c3a22;
 }
 
+/* TEXTO BANNER ESTILO LOGO */
+
+.banner-text {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 3.5rem; /* tamaño grande */
+    color: #f5c542; /* dorado */
+
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.6);
+
+    margin: 0;
+}
