@@ -72,7 +72,7 @@ main .texto h1 {
     color: rgb(121, 77, 46);
     position: relative;
     left: 20px;               /* Mueve el h1 hacia la derecha */
-    top: 10px;               /* Mueve el h1 hacia arriba */
+    top: 30px;               /* Mueve el h1 hacia arriba */
 }
 
 /* Párrafo dentro de main */
