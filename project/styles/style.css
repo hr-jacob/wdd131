@@ -191,6 +191,13 @@ footer {
     flex-shrink: 0;    /* evita que se aplasten */
 }
 
+.bloque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin: 40px 0; /* 👈 separación vertical */
+}
 
 /* Texto */
 .name { font-weight: 700; margin-top: 10px; color: rgb(121, 77, 46); }
