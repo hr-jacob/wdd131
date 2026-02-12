@@ -180,6 +180,18 @@ footer {
     font-size: 1rem;
 }
 
+/* about us page  */
+
+.bloque img {
+    width: 250px;      /* mismo tamaño que tus cards */
+    height: 180px;     /* ajusta según tu grid */
+    object-fit: cover; /* no se deforman */
+    border-radius: 8px;
+
+    flex-shrink: 0;    /* evita que se aplasten */
+}
+
+
 /* Texto */
 .name { font-weight: 700; margin-top: 10px; color: rgb(121, 77, 46); }
 .description { font-size: .95rem; color: rgb(121, 77, 46); }
