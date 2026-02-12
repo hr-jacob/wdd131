@@ -326,7 +326,7 @@ main .texto h1 {
 /* ===== FIX TAMAÑO BANNER ===== */
 
 .hero-text {
-    font-size: 5rem; /* 👈 fuerza el tamaño base */
+    font-size: 2.2rem; /* 👈 fuerza el tamaño base */
 }
 
 .banner-text {
