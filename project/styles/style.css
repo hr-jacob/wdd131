@@ -163,7 +163,9 @@ footer {
     border-radius: 10px;
 
     text-align: center;
-    background: rgba(237, 234, 234, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* Opcional: estilos del texto */
