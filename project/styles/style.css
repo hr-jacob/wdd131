@@ -13,39 +13,24 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 10px;          /* 👈 control principal */
-  padding: 6px 10px;  /* 👈 pequeño */
-
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center; /* ✅ Centra horizontalmente */
+    align-items: center;     /* ✅ Centra verticalmente */
+    gap: 40px;
 }
 
-/* Links */
-
+/* Remove default link color (blue) and underline */
 nav a {
-  text-decoration: none;
-  color: black;
-
-  font-size: 1rem;
-  padding: 4px 6px;   /* 👈 en vez de margin */
+    color: rgb(121, 77, 46);            /* Change this to any color you like */
+    text-decoration: none;   /* Removes underline */
+    font-weight: bold;       /* Optional: makes text thicker */
+    padding: 10px;           /* Adds space around each link */
 }
-
-/* Logo */
-
-.logo {
-  width: 70px;
-  margin: 0;
-}
-
 
 /* Change color when hovering */
 nav a:hover {
     color: #d35400;          /* Example: orange on hover */
 }
-
 
 .bloque {
     display: flex;              /* Imagen a la izquierda, texto a la derecha */
@@ -100,6 +85,12 @@ main .texto p {
     top: -5px;                /* Mueve el párrafo hacia arriba */
     text-align: justify;
 }
+
+.logo {
+    width: 100px;        /* Mantiene proporción de la imagen */
+    margin-right: 30px; /* Espacio a la derecha */
+}
+
 
 footer {
     width: 100%;                          
@@ -335,6 +326,7 @@ main .texto h1 {
 /* ===== FIX TAMAÑO BANNER ===== */
 
 .hero-text {
+    font-size: 2.2rem; /* 👈 fuerza el tamaño base */
     font-size: 2.8rem; /* 👈 fuerza el tamaño base */
 }
 
@@ -349,21 +341,4 @@ main .texto h1 {
         2px 2px 6px rgba(0,0,0,0.7);
 
     margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
