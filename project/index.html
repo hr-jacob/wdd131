@@ -3,107 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Santa Teresita Bakery offers fresh bread, pastries, and cakes made daily with traditional recipes.">
-
+    <meta name="description" content="Santa Teresita Bakery offers fresh bread, pastries, and cakes made daily with traditional recipes. Visit us to enjoy quality baked goods.">
     <title>Santa Teresita Bakery</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
-
-    <!-- Icon -->
     <link rel="icon" href="images/logo-panaderia.png" type="image/png">
-
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
-    <!-- Script -->
-    <script src="scripts/bakery.js" defer></script>
+
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place.css" media="(min-width: 800px)">
+
+<script src="scripts/bakery.js" defer></script>
 </head>
-
 <body>
+    <header>
+        <nav>
+            <img src="images/logo-bakery.webp" alt="bakery" class="logo">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="news-letter.html">Join our News letter</a>
+            <a href="https://www.facebook.com/santa.teresita.453337">Facebook</a>
+        </nav>
+    </header>
+            <section class="hero">
 
-<header>
-    <nav>
-        <img src="images/logo-bakery.webp" alt="bakery" class="logo">
+            <picture>
+                <source media="(max-width: 499px)" srcset="images/spain-small.webp">
+                <source media="(max-width: 899px)" srcset="images/spain-medium.webp">
+                <source media="(min-width: 900px)" srcset="images/breads.webp">
 
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About us</a>
-        <a href="news-letter.html">Join our Newsletter</a>
-        <a href="https://www.facebook.com/santa.teresita.453337">Facebook</a>
-    </nav>
-</header>
+                <img src="images/breads.webp" alt="Breads" class="hero-img">
+            </picture>
 
+            <!-- Text goes HERE -->
+            <div class="hero-text">
+                <p class="banner-text">
+                Preserving the traditional mexican bakery
+                </p>
+            </div>
 
-<!-- HERO -->
-<section class="hero">
-
-    <picture>
-
-        <!-- Mobile -->
-        <source media="(max-width: 499px)" srcset="images/spain-small.webp">
-
-        <!-- Tablet -->
-        <source media="(max-width: 899px)" srcset="images/spain-medium.webp">
-
-        <!-- Desktop -->
-        <source media="(min-width: 900px)" srcset="images/breads.webp">
-
-        <img src="images/breads.webp" alt="Fresh breads" class="hero-img">
-
-    </picture>
-
-
-    <!-- Text -->
-    <div class="hero-text">
-        <p class="banner-text">
-            Preserving the traditional Mexican bakery
-        </p>
-    </div>
-
-</section>
+            </section>
 
 
 <main>
-
-    <div class="texto">
-        <h1>Our delicious traditional breads</h1>
-    </div>
-
-
-    <div class="grid-container">
-
-        <div class="item">
-            <img src="images/bolillos.webp" alt="Artisan bread">
-
-            <p class="name">Artisan bread</p>
-
-            <p class="description">
-                Slowly baked in a wood-fired oven, getting a crispy crust and a tender interior.
-            </p>
+        <div class="texto">
+            <h1>Our delicious traditional breads</h1>
         </div>
 
+        <div class="grid-container">
+    <div class="item"><img src="images/bolillos.webp"><p class="name">Artisan bread</p><p class="description">Slowly baked in a wood-fired oven, getting a crispy crust and a tender, cooked interior.</p></div>
+    <div class="item"><img src="images/pan-dulce.webp"><p class="name">Sweet bread</p><p class="description">Carefully baked in a wood-fired oven, giving it a soft texture, irresistible aroma, and perfectly balanced flavor.</p></div>
 
-        <div class="item">
-            <img src="images/pan-dulce.webp" alt="Sweet bread">
-
-            <p class="name">Sweet bread</p>
-
-            <p class="description">
-                Carefully baked in a wood-fired oven with soft texture and balanced flavor.
-            </p>
-        </div>
-
-    </div>
 
 </main>
 
-
-<footer>
-    <p>&copy; <span id="currentyear"></span> Santa Teresita – All rights reserved</p>
-    <p id="lastModified"></p>
-</footer>
-
-
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Santa Teresita – All rights reserved</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
