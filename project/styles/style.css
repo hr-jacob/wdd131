@@ -1,4 +1,355 @@
-/* ================= RESET ================= */
+body {
+    margin: 0; /* Elimina los márgenes del navegador */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;              /* Ocupa todo el ancho del navegador */
+    background-color: rgb(255,222,33); /* Color de fondo (puedes cambiarlo) */
+    padding: 1.5px 0;           /* Espaciado interno arriba y abajo */
+    text-align: center;        /* Centra el texto */
+    font-size: 1em;          /* Tamaño de la fuente */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra debajo del header */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;          /* 👈 control principal */
+  padding: 6px 10px;  /* 👈 pequeño */
+
+  flex-wrap: wrap;
+}
+
+/* Links */
+
+nav a {
+  text-decoration: none;
+  color: black;
+
+  font-size: 1rem;
+  padding: 4px 6px;   /* 👈 en vez de margin */
+}
+
+/* Logo */
+
+.logo {
+  width: 70px;
+  margin: 0;
+}
+
+
+/* Change color when hovering */
+nav a:hover {
+    color: #d35400;          /* Example: orange on hover */
+}
+
+
+.bloque {
+    display: flex;              /* Imagen a la izquierda, texto a la derecha */
+    align-items: center;
+    gap: 20px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;   /* Ajusta el ancho que quieras */
+    margin: 0 auto;     /* Centrado */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenedor de texto dentro del main */
+main .texto {
+    display: flex;
+    flex-direction: column;   /* h1 arriba, párrafo abajo */
+    justify-content: center;  /* Centra verticalmente el texto */
+    align-items: flex-start;  /* Alinea el texto a la izquierda */
+    gap: 10px;                /* Espacio entre el h1 y el párrafo */
+}
+
+/* H1 dentro de main */
+main .texto h1 {
+    font-size: 30px;          /* Tamaño de letra del título */
+    margin: 0;                /* Quita espacio extra */
+    font-weight: bold;
+    color: rgb(121, 77, 46);
+    position: relative;
+    left: 20px;               /* Mueve el h1 hacia la derecha */
+    top: 30px;               /* Mueve el h1 hacia arriba */
+}
+
+/* Párrafo dentro de main */
+main .texto p {
+    font-size: 15px;          /* Tamaño del texto */
+    color: rgb(121, 77, 46);
+    line-height: 1.6;         /* Espaciado entre líneas */
+    position: relative;
+    left: 20px;               /* Mueve el párrafo hacia la derecha */
+    top: -5px;                /* Mueve el párrafo hacia arriba */
+    text-align: justify;
+}
+
+footer {
+    width: 100%;                          
+    background-color: rgb(255,222,33);  /* Mismo color del header */
+    padding: 15px 0;                    /* Espaciado interno */
+    text-align: center;                 /* Centra el texto */
+    font-size: 1em;                     /* Tamaño del texto */
+    color: rgb(121, 77, 46);            /* Color del texto */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra arriba (opcional) */
+    margin-top: 5px;                   /* Separación del contenido */
+}
+
+/* Asegúrate de que la clase sea exactamente .grid-container */
+.grid-container {
+  display: grid !important; /* fuerza el grid si otra regla lo sobrescribe */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 3 columnas iguales */
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Si algún padre tiene display:flex y sus hijos toman 100%,
+   este asegura que los items se comporten como celdas de grid */
+.grid-container > * {
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo de cada tarjeta */
+.item {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Imagen dentro del item */
+.item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/*Banner transparente*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* ajusta si quieres */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caja transparente */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    border-radius: 10px;
+
+    text-align: center;
+    background: rgba(46, 45, 45, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Opcional: estilos del texto */
+.hero-text h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.hero-text p {
+    margin: 5px 0 0;
+    font-size: inherit; /* 👈 deja usar el tamaño real */
+}
+
+
+/* about us page  */
+
+.bloque img {
+    width: 180px;      /* mismo tamaño que tus cards */
+    height: 140px;     /* ajusta según tu grid */
+    object-fit: cover; /* no se deforman */
+    border-radius: 8px;
+    flex-shrink: 0;    /* evita que se aplasten */
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin: 30px 50px; /* 👈 separación vertical */
+}
+
+.bloque:first-of-type img {
+    margin-top: 70px; /* 👈 ajusta a tu gusto */
+}
+
+.bloque:first-of-type {
+    margin-bottom: 10px; /* 👈 reduce espacio abajo */
+}
+
+main .texto h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(121, 77, 46);
+
+    margin: 0 0 35px 0; /* 👈 solo abajo */
+}
+
+.texto p {
+    margin: 6px 0;   /* 👈 menos espacio arriba y abajo */
+    line-height: 1.4; /* 👈 más compacto */
+}
+
+/* Texto */
+.name { font-weight: 700; margin-top: 10px; color: rgb(121, 77, 46); }
+.description { font-size: .95rem; color: rgb(121, 77, 46); }
+
+/* Responsivo: en pantallas pequeñas pasa a 1 columna, en tablet a 2 */
+@media (max-width: 768px) {
+  .grid-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  .grid-container { grid-template-columns: 1fr; }
+}
+
+/* ===== FORMULARIO CENTRADO ===== */
+
+.form-container {
+    background: #fff;
+    max-width: 420px;
+    width: 100%;
+
+    padding: 30px 35px;
+    margin: 40px auto;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+/* Títulos */
+.form-container h2 {
+    color: rgb(121, 77, 46);
+    margin-bottom: 5px;
+}
+
+.form-container h3 {
+    color: rgb(121, 77, 46);
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+/* Grupos */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.input-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: rgb(121, 77, 46);
+}
+
+/* Inputs */
+.input-group input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: rgb(121, 77, 46);
+}
+
+/* Botón */
+.button-wrapper {
+    margin-top: 20px;
+}
+
+.button-wrapper button {
+    background: rgb(121, 77, 46);
+    color: white;
+
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-wrapper button:hover {
+    background: #5c3a22;
+}
+
+/* TEXTO BANNER ESTILO LOGO */
+
+.banner-text {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 5rem; /* grande */
+    color: #f5c542;
+
+    text-shadow: 
+        2px 2px 6px rgba(0,0,0,0.7);
+
+    margin: 0;
+}
+
+/* ===== FIX TAMAÑO BANNER ===== */
+
+.hero-text {
+    font-size: 2.8rem; /* 👈 fuerza el tamaño base */
+}
+
+.banner-text {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 1em; /* usa el tamaño del padre */
+    font-weight: bold;
+    color: #e1b439;
+
+    text-shadow: 
+        2px 2px 6px rgba(0,0,0,0.7);
+
+    margin: 0;
+}
 
 * {
   box-sizing: border-box;
@@ -11,305 +362,8 @@ body {
   line-height: 1.6;
 }
 
-/* ================= IMAGES ================= */
-
 img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* ================= HEADER / NAV ================= */
-
-header {
-  width: 100%;
-  background: rgb(255,222,33);
-  padding: 0;
-  margin: 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 10px;
-  padding: 6px 10px;
-
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-/* Logo */
-
-.logo {
-  width: 60px;
-  margin: 0;
-  padding: 0;
-}
-
-/* Links */
-
-nav a {
-  text-decoration: none;
-  color: black;
-
-  font-size: 1rem;
-  padding: 4px 6px;
-}
-
-nav a:hover {
-  color: #d35400;
-}
-
-/* ================= HERO ================= */
-
-.hero {
-  position: relative;
-  width: 100%;
-  min-height: 250px; /* 👈 ya no fija */
-  overflow: hidden;
-}
-
-.hero picture,
-.hero img {
-  width: 100%;
-  height: 100%;
-}
-
-.hero img {
-  object-fit: cover;
-}
-
-/* Banner */
-
-.hero-text {
-  position: absolute;
-  inset: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2.8rem;
-  text-align: center;
-
-  background: rgba(0,0,0,.25);
-  backdrop-filter: blur(4px);
-}
-
-.banner-text {
-  font-family: 'Great Vibes', cursive;
-
-  font-size: 1em;
-  font-weight: bold;
-
-  color: #e1b439;
-
-  text-shadow: 2px 2px 6px rgba(0,0,0,.7);
-}
-
-/* ================= MAIN ================= */
-
-main {
-  max-width: 900px;
-  margin: 1.5rem auto;
-  padding: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-/* Title */
-
-.texto h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(121,77,46);
-
-  margin-bottom: 20px;
-}
-
-/* ================= GRID ================= */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 20px;
-  padding: 10px;
-}
-
-.item {
-  text-align: center;
-
-  border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 8px;
-
-  background: #fff;
-}
-
-.item img {
-  width: 100%;
-  height: 160px;
-
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-/* Text */
-
-.name {
-  font-weight: 700;
-  margin-top: 10px;
-  color: rgb(121,77,46);
-}
-
-.description {
-  font-size: .95rem;
-  color: rgb(121,77,46);
-}
-
-/* ================= ABOUT PAGE ================= */
-
-.bloque {
-  display: flex;
-  align-items: center;
-
-  gap: 20px;
-  margin: 25px 20px;
-}
-
-.bloque img {
-  width: 180px;
-  height: 140px;
-
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-/* ================= FORM ================= */
-
-.form-container {
-  background: #fff;
-
-  max-width: 420px;
-  width: 100%;
-
-  padding: 30px;
-  margin: 40px auto;
-
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,.15);
-
-  text-align: center;
-}
-
-.form-container h2,
-.form-container h3 {
-  color: rgb(121,77,46);
-}
-
-.form-container h3 {
-  margin-bottom: 25px;
-  font-weight: normal;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-
-  margin-bottom: 18px;
-}
-
-.input-group label {
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: rgb(121,77,46);
-}
-
-.input-group input {
-  padding: 10px;
-
-  border-radius: 6px;
-  border: 1px solid #ccc;
-
-  font-size: 1rem;
-}
-
-.input-group input:focus {
-  outline: none;
-  border-color: rgb(121,77,46);
-}
-
-/* Button */
-
-.button-wrapper {
-  margin-top: 20px;
-}
-
-.button-wrapper button {
-  background: rgb(121,77,46);
-  color: white;
-
-  border: none;
-  padding: 10px 25px;
-
-  border-radius: 6px;
-  font-size: 1rem;
-
-  cursor: pointer;
-  transition: .3s;
-}
-
-.button-wrapper button:hover {
-  background: #5c3a22;
-}
-
-/* ================= FOOTER ================= */
-
-footer {
-  width: 100%;
-
-  background: rgb(255,222,33);
-  padding: 15px 0;
-
-  text-align: center;
-  color: rgb(121,77,46);
-
-  box-shadow: 0 -2px 5px rgba(0,0,0,.2);
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-
-  nav {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 420px) {
-
-  .hero {
-    min-height: 200px;
-  }
-
-  .hero-text {
-    font-size: 1.8rem;
-  }
 }
