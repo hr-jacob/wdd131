@@ -499,3 +499,16 @@ main .texto h1 {
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 750px) {
+
+  .nav-links {
+    z-index: 9999;
+  }
+
+  .menu-toggle {
+    z-index: 10000;
+    position: relative;
+  }
+
+}
