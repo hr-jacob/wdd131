@@ -15,18 +15,24 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <img src="images/logo-bakery.webp" alt="bakery" class="logo">
-            <a href="index.html">Home</a>
-            <a href="about-us.html">About us</a>
-            <a href="news-letter.html">Join our News letter</a>
-            <a href="https://www.facebook.com/santa.teresita.453337">Facebook</a>
+            <!-- Botón hamburguesa -->
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <!-- Links -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About us</a>
+                <a href="news-letter.html">Join our News letter</a>
+                <a href="https://www.facebook.com/santa.teresita.453337">Facebook</a>
+            </div>
         </nav>
+
     </header>
         <section class="hero">
             <picture>
-                <source media="(min-width: 900px)" srcset="images/breads.webp">
-                <source media="(min-width: 500px)" srcset="images/spain-medium.webp">
                 <img src="images/breads.webp" alt="Breads">
             </picture>
 

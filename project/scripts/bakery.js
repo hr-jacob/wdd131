@@ -24,3 +24,9 @@ if (temperature <= 10 && windSpeed > 4.8) {
   windChillElement.textContent = "N/A";
 }
 
+const toggle = document.getElementById("menu-toggle");
+const links = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+  links.classList.toggle("active");
+});

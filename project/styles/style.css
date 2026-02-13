@@ -396,3 +396,57 @@ main .texto h1 {
     padding: 10px;
   }
 }
+
+/* ===== MENU HAMBURGUESA ===== */
+
+/* Botón */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(121, 77, 46);
+}
+
+/* Links normales (PC) */
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 700px) {
+
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  /* Mostrar botón */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Ocultar menú */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(255,222,33);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Mostrar cuando está activo */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+}
