@@ -33,9 +33,6 @@ nav a:hover {
     color: #d35400;          /* Example: orange on hover */
 }
 
-.logo {
-  width: 60px;
-}
 
 .bloque {
     display: flex;              /* Imagen a la izquierda, texto a la derecha */
@@ -363,4 +360,3 @@ img {
   height: auto;
   display: block;
 }
-
