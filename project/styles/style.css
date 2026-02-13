@@ -17,6 +17,7 @@ nav {
     justify-content: center; /* ✅ Centra horizontalmente */
     align-items: center;     /* ✅ Centra verticalmente */
     gap: 40px;
+    position: relative; 
 }
 
 /* Remove default link color (blue) and underline */
