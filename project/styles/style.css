@@ -90,10 +90,9 @@ main .texto p {
 }
 
 .logo {
-    width: 100px;        /* Mantiene proporción de la imagen */
-    margin-right: 30px; /* Espacio a la derecha */
+  width: 70px;
+  margin-right: 8px; /* 👈 pequeño */
 }
-
 
 footer {
     width: 100%;                          
