@@ -450,3 +450,51 @@ main .texto h1 {
     padding: 10px 0;
   }
 }
+
+/* ===== FIX MENU MOVIL ===== */
+
+@media (max-width: 700px) {
+
+  /* Mantener nav visible */
+  nav {
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* Botón siempre arriba */
+  .menu-toggle {
+    z-index: 1100;
+    position: relative;
+  }
+
+  /* Menú desplegable */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+    max-height: 90vh;       /* 👈 evita que se corte */
+    overflow-y: auto;      /* 👈 scroll si es largo */
+
+    background: rgb(255,222,33);
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding: 20px 0;
+
+    z-index: 1050;          /* 👈 debajo del botón */
+  }
+
+  /* Mostrar */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Links grandes para tocar */
+  .nav-links a {
+    padding: 15px 0;
+    font-size: 1.1rem;
+  }
+}
