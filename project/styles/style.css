@@ -13,23 +13,28 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: center; /* ✅ Centra horizontalmente */
-    align-items: center;     /* ✅ Centra verticalmente */
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 /* Remove default link color (blue) and underline */
 nav a {
-    color: rgb(121, 77, 46);            /* Change this to any color you like */
-    text-decoration: none;   /* Removes underline */
-    font-weight: bold;       /* Optional: makes text thicker */
-    padding: 10px;           /* Adds space around each link */
+  text-decoration: none;
+  color: black;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Change color when hovering */
 nav a:hover {
     color: #d35400;          /* Example: orange on hover */
+}
+
+.logo {
+  width: 60px;
 }
 
 .bloque {
