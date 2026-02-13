@@ -6,7 +6,7 @@ body {
 header {
     width: 100%;              /* Ocupa todo el ancho del navegador */
     background-color: rgb(255,222,33); /* Color de fondo (puedes cambiarlo) */
-    padding: 1.5px 0;           /* Espaciado interno arriba y abajo */
+    padding: 15px 0;           /* Espaciado interno arriba y abajo */
     text-align: center;        /* Centra el texto */
     font-size: 1em;          /* Tamaño de la fuente */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra debajo del header */
