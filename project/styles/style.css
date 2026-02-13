@@ -14,9 +14,10 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;   /* 👈 centra todo */
   align-items: center;
-  padding: 1rem;
+  gap: 15px;                 /* 👈 espacio entre elementos */
+  padding: .5rem 1rem;       /* 👈 menos padding */
   flex-wrap: wrap;
 }
 
