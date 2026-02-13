@@ -364,36 +364,3 @@ img {
   display: block;
 }
 
-/* 📱 Mobile screens */
-@media (max-width: 768px) {
-
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.3rem 0;
-  }
-
-  .hero-text {
-    width: 90%;
-  }
-
-  main {
-    margin: 1rem;
-  }
-
-  footer {
-    font-size: 0.9rem;
-  }
-}
-
-input,
-select,
-textarea,
-button {
-  width: 100%;
-  max-width: 100%;
-}
