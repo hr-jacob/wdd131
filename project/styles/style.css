@@ -342,3 +342,57 @@ main .texto h1 {
 
     margin: 0;
 }
+
+@media (max-width: 600px) {
+
+  /* Menú */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  /* Hero */
+  .hero {
+    height: 250px;
+  }
+
+  .hero-text {
+    padding: 12px 15px;
+    font-size: 1.5rem;
+  }
+
+  .banner-text {
+    font-size: 1.2em;
+  }
+
+  /* Títulos */
+  main .texto h1 {
+    font-size: 22px;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  main .texto p {
+    left: 0;
+    top: 0;
+    font-size: 14px;
+  }
+
+  /* Bloques About */
+  .bloque {
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
