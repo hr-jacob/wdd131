@@ -1,44 +1,42 @@
 body {
-    margin: 0; /* Elimina los márgenes del navegador */
+    margin: 0; 
     font-family: Arial, sans-serif;
 }
 
 header {
-    width: 100%;              /* Ocupa todo el ancho del navegador */
-    background-color: rgb(255,222,33); /* Color de fondo (puedes cambiarlo) */
-    padding: 15px 0;           /* Espaciado interno arriba y abajo */
-    text-align: center;        /* Centra el texto */
-    font-size: 1em;          /* Tamaño de la fuente */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra debajo del header */
+    width: 100%;            
+    background-color: rgb(255,222,33); 
+    padding: 15px 0;          
+    text-align: center;       
+    font-size: 1em;          
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
 nav {
     display: flex;
-    justify-content: center; /* ✅ Centra horizontalmente */
-    align-items: center;     /* ✅ Centra verticalmente */
+    justify-content: center; 
+    align-items: center;    
     gap: 40px;
     position: relative; 
 }
 
-/* Remove default link color (blue) and underline */
 nav a {
-    color: rgb(121, 77, 46);            /* Change this to any color you like */
-    text-decoration: none;   /* Removes underline */
-    font-weight: bold;       /* Optional: makes text thicker */
-    padding: 10px;           /* Adds space around each link */
+    color: rgb(121, 77, 46);            
+    text-decoration: none;   
+    font-weight: bold;      
+    padding: 10px;          
 }
 
-/* Change color when hovering */
+
 nav a:hover {
-    color: #d35400;          /* Example: orange on hover */
+    color: #d35400;          
 }
 
 .bloque {
-    display: flex;              /* Imagen a la izquierda, texto a la derecha */
+    display: flex;              
     align-items: center;
     gap: 20px;
 }
-
 
 main {
     display: flex;
@@ -46,8 +44,8 @@ main {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    max-width: 900px;   /* Ajusta el ancho que quieras */
-    margin: 0 auto;     /* Centrado */
+    max-width: 900px; 
+    margin: 0 auto;   
 }
 
 .hero img {
@@ -56,72 +54,66 @@ main {
   display: block;
 }
 
-/* Contenedor de texto dentro del main */
 main .texto {
     display: flex;
-    flex-direction: column;   /* h1 arriba, párrafo abajo */
-    justify-content: center;  /* Centra verticalmente el texto */
-    align-items: flex-start;  /* Alinea el texto a la izquierda */
-    gap: 10px;                /* Espacio entre el h1 y el párrafo */
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: flex-start;  
+    gap: 10px;               
 }
-
-/* H1 dentro de main */
 main .texto h1 {
-    font-size: 30px;          /* Tamaño de letra del título */
-    margin: 0;                /* Quita espacio extra */
+    font-size: 30px;          
+    margin: 0;                
     font-weight: bold;
     color: rgb(121, 77, 46);
     position: relative;
-    left: 20px;               /* Mueve el h1 hacia la derecha */
-    top: 30px;               /* Mueve el h1 hacia arriba */
+    left: 20px;              
+    top: 30px;           
 }
 
-/* Párrafo dentro de main */
 main .texto p {
-    font-size: 15px;          /* Tamaño del texto */
+    font-size: 15px;         
     color: rgb(121, 77, 46);
-    line-height: 1.6;         /* Espaciado entre líneas */
+    line-height: 1.6;       
     position: relative;
-    left: 20px;               /* Mueve el párrafo hacia la derecha */
-    top: -5px;                /* Mueve el párrafo hacia arriba */
+    left: 20px;               
+    top: -5px;                
     text-align: justify;
 }
 
 .logo {
-    width: 100px;        /* Mantiene proporción de la imagen */
-    margin-right: 30px; /* Espacio a la derecha */
+    width: 100px;        
+    margin-right: 30px; 
 }
 
 
 footer {
     width: 100%;                          
-    background-color: rgb(255,222,33);  /* Mismo color del header */
-    padding: 15px 0;                    /* Espaciado interno */
-    text-align: center;                 /* Centra el texto */
-    font-size: 1em;                     /* Tamaño del texto */
-    color: rgb(121, 77, 46);            /* Color del texto */
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra arriba (opcional) */
-    margin-top: 5px;                   /* Separación del contenido */
+    background-color: rgb(255,222,33);  
+    padding: 15px 0;                   
+    text-align: center;              
+    font-size: 1em;                   
+    color: rgb(121, 77, 46);           
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    margin-top: 5px;                   
 }
 
-/* Asegúrate de que la clase sea exactamente .grid-container */
+
 .grid-container {
-  display: grid !important; /* fuerza el grid si otra regla lo sobrescribe */
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 3 columnas iguales */
+  display: grid !important; 
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
 
-/* Si algún padre tiene display:flex y sus hijos toman 100%,
-   este asegura que los items se comporten como celdas de grid */
 .grid-container > * {
   width: auto;
   max-width: 100%;
   box-sizing: border-box;
 }
 
-/* Estilo de cada tarjeta */
+/* card style */
 .item {
   text-align: center;
   border: 1px solid #ddd;
@@ -130,7 +122,7 @@ footer {
   background: #fff;
 }
 
-/* Imagen dentro del item */
+/* Image inside item */
 .item img {
   width: 100%;
   height: 160px;
@@ -139,11 +131,11 @@ footer {
   border-radius: 6px;
 }
 
-/*Banner transparente*/
+/*Banner trasboarent*/
 .hero {
     position: relative;
     width: 100%;
-    height: 400px; /* ajusta si quieres */
+    height: 400px; 
     overflow: hidden;
 }
 
@@ -154,7 +146,7 @@ footer {
     display: block;
 }
 
-/* Caja transparente */
+/* box banner */
 .hero-text {
     position: absolute;
     top: 50%;
@@ -162,14 +154,12 @@ footer {
     transform: translate(-50%, -50%);
     padding: 20px 30px;
     border-radius: 10px;
-
     text-align: center;
     background: rgba(46, 45, 45, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Opcional: estilos del texto */
 .hero-text h1 {
     margin: 0;
     font-size: 2.2rem;
@@ -177,18 +167,18 @@ footer {
 
 .hero-text p {
     margin: 5px 0 0;
-    font-size: inherit; /* 👈 deja usar el tamaño real */
+    font-size: inherit; 
 }
 
 
 /* about us page  */
 
 .bloque img {
-    width: 180px;      /* mismo tamaño que tus cards */
-    height: 140px;     /* ajusta según tu grid */
-    object-fit: cover; /* no se deforman */
+    width: 180px;      
+    height: 140px;     
+    object-fit: cover; 
     border-radius: 8px;
-    flex-shrink: 0;    /* evita que se aplasten */
+    flex-shrink: 0;    
 }
 
 .bloque {
@@ -196,35 +186,33 @@ footer {
     align-items: center;
     gap: 20px;
 
-    margin: 30px 50px; /* 👈 separación vertical */
+    margin: 30px 50px; 
 }
 
 .bloque:first-of-type img {
-    margin-top: 70px; /* 👈 ajusta a tu gusto */
+    margin-top: 70px; 
 }
 
 .bloque:first-of-type {
-    margin-bottom: 10px; /* 👈 reduce espacio abajo */
+    margin-bottom: 10px; 
 }
 
 main .texto h1 {
     font-size: 30px;
     font-weight: bold;
     color: rgb(121, 77, 46);
-
-    margin: 0 0 35px 0; /* 👈 solo abajo */
+    margin: 0 0 35px 0; 
 }
 
 .texto p {
-    margin: 6px 0;   /* 👈 menos espacio arriba y abajo */
-    line-height: 1.4; /* 👈 más compacto */
+    margin: 6px 0;   
+    line-height: 1.4; /
 }
 
-/* Texto */
+/* Text */
 .name { font-weight: 700; margin-top: 10px; color: rgb(121, 77, 46); }
 .description { font-size: .95rem; color: rgb(121, 77, 46); }
 
-/* Responsivo: en pantallas pequeñas pasa a 1 columna, en tablet a 2 */
 @media (max-width: 768px) {
   .grid-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -232,7 +220,7 @@ main .texto h1 {
   .grid-container { grid-template-columns: 1fr; }
 }
 
-/* ===== FORMULARIO CENTRADO ===== */
+/* ===== form centered ===== */
 
 .form-container {
     background: #fff;
@@ -248,7 +236,7 @@ main .texto h1 {
     text-align: center;
 }
 
-/* Títulos */
+/* Titles */
 .form-container h2 {
     color: rgb(121, 77, 46);
     margin-bottom: 5px;
@@ -288,7 +276,7 @@ main .texto h1 {
     border-color: rgb(121, 77, 46);
 }
 
-/* Botón */
+/* button */
 .button-wrapper {
     margin-top: 20px;
 }
@@ -310,12 +298,12 @@ main .texto h1 {
     background: #5c3a22;
 }
 
-/* TEXTO BANNER ESTILO LOGO */
+/* banner text */
 
 .banner-text {
     font-family: 'Great Vibes', cursive;
 
-    font-size: 5rem; /* grande */
+    font-size: 5rem; 
     color: #f5c542;
 
     text-shadow: 
@@ -324,17 +312,17 @@ main .texto h1 {
     margin: 0;
 }
 
-/* ===== FIX TAMAÑO BANNER ===== */
+/* ===== banner size ===== */
 
 .hero-text {
-    font-size: 2.2rem; /* 👈 fuerza el tamaño base */
-    font-size: 2.8rem; /* 👈 fuerza el tamaño base */
+    font-size: 2.2rem; 
+    font-size: 2.8rem; 
 }
 
 .banner-text {
     font-family: 'Great Vibes', cursive;
 
-    font-size: 1em; /* usa el tamaño del padre */
+    font-size: 1em; 
     font-weight: bold;
     color: #e1b439;
 
@@ -346,7 +334,6 @@ main .texto h1 {
 
 @media (max-width: 600px) {
 
-  /* Menú */
   nav {
     flex-direction: column;
     gap: 15px;
@@ -370,7 +357,6 @@ main .texto h1 {
     font-size: 1.2em;
   }
 
-  /* Títulos */
   main .texto h1 {
     font-size: 22px;
     left: 0;
@@ -384,7 +370,7 @@ main .texto h1 {
     font-size: 14px;
   }
 
-  /* Bloques About */
+  /* About */
   .bloque {
     flex-direction: column;
     margin: 20px;
@@ -398,9 +384,8 @@ main .texto h1 {
   }
 }
 
-/* ===== MENU HAMBURGUESA ===== */
+/* ===== menu ===== */
 
-/* Botón */
 .menu-toggle {
   display: none;
   background: none;
@@ -410,13 +395,12 @@ main .texto h1 {
   color: rgb(121, 77, 46);
 }
 
-/* Links normales (PC) */
 .nav-links {
   display: flex;
   gap: 40px;
 }
 
-/* ===== MOBILE ===== */
+/* ===== mobil ===== */
 @media (max-width: 700px) {
 
   nav {
@@ -424,12 +408,10 @@ main .texto h1 {
     padding: 0 20px;
   }
 
-  /* Mostrar botón */
   .menu-toggle {
     display: block;
   }
 
-  /* Ocultar menú */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -441,8 +423,6 @@ main .texto h1 {
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }
-
-  /* Mostrar cuando está activo */
   .nav-links.active {
     display: flex;
   }
@@ -452,48 +432,43 @@ main .texto h1 {
   }
 }
 
-/* ===== FIX MENU MOVIL ===== */
+/* ===== menu mobil ===== */
 
 @media (max-width: 700px) {
 
-  /* Mantener nav visible */
+
   nav {
     position: relative;
     z-index: 1000;
   }
 
-  /* Botón siempre arriba */
   .menu-toggle {
     z-index: 1100;
     position: relative;
   }
 
-  /* Menú desplegable */
+  /* Menu */
   .nav-links {
     display: none;
     flex-direction: column;
 
     width: 100%;
-    max-height: 90vh;       /* 👈 evita que se corte */
-    overflow-y: auto;      /* 👈 scroll si es largo */
-
+    max-height: 90vh;      
+    overflow-y: auto;     
     background: rgb(255,222,33);
-
     position: absolute;
     top: 100%;
     left: 0;
-
     padding: 20px 0;
-
-    z-index: 1050;          /* 👈 debajo del botón */
+    z-index: 1050;
   }
 
-  /* Mostrar */
+  /* show */
   .nav-links.active {
     display: flex;
   }
 
-  /* Links grandes para tocar */
+  /* Links */
   .nav-links a {
     padding: 15px 0;
     font-size: 1.1rem;
